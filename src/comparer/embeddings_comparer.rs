@@ -30,7 +30,7 @@ impl EmbeddingsComparer {
                 best_idx = i as i32;
             }
         }
-
+        println!("Cosine Similarity: {}", max_score);
         Ok(best_idx)
     }
 }

@@ -36,7 +36,7 @@ fn main() -> Result<()> {
         embedding_output, query_embedding
     )?;
 
-    println!("Closest Article: {:?}",sentences.get(idx as usize));
+    println!("Closest Article: {:?}",sentences.get(idx as usize).unwrap());
 
 
 
