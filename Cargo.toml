@@ -1,0 +1,11 @@
+[package]
+name = "rust-poor-man-embeddings"
+version = "0.1.0"
+edition = "2021"
+description = "An implementation of the medium article"
+
+[dependencies]
+tch = "0.17.0"  # Rust wrappers for the C++ PyTorch API :contentReference[oaicite:0]{index=0}
+rust-bert = { version = "0.23.0", features = ["download-libtorch"] }
+anyhow = "1.0"
+console = { version = "0.16.0", features = ["std"] }
